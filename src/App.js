@@ -1,21 +1,35 @@
-import React from 'react';
+import React, { useState } from 'react';
 import About from './components/About';
+import Header from './components/Header';
 
 function App() {
+  const [categories] = useState([
+    {
+      name: 'about me',
+      description: 'Photo and bio of Angie Gustafson',
+    },
+    { name: 'portfolio', description: 'featured projects' },
+    { name: 'contact', description: 'contact form and info' },
+    { name: 'resume', description: 'professional resume' },
+  ]);
+
+  const [currentCategory, setCurrentCategory] = useState(categories[0]);
+
+  const [contactSelected, setContactSelected] = useState(false);
+
   return (
 <div>
-      <Nav
+      <Header
         categories={categories}
         setCurrentCategory={setCurrentCategory}
         currentCategory={currentCategory}
         contactSelected={contactSelected}
         setContactSelected={setContactSelected}
-      ></Nav>
+      ></Header>
       <main>
         {!contactSelected ? (
           <>
-            <Gallery currentCategory={currentCategory}></Gallery>
-            <About></About>
+            <Navigation currentCategory={currentCategory}></Navigation>
           </>
         ) : (
           <ContactForm></ContactForm>
