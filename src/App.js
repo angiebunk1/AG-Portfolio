@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import About from './components/About';
+// import About from './components/About';
 import Header from './components/Header';
+import Navigation from './components/Navigation';
 
 function App() {
   const [categories] = useState([
@@ -9,8 +10,8 @@ function App() {
       description: 'Photo and bio of Angie Gustafson',
     },
     { name: 'portfolio', description: 'featured projects' },
-    { name: 'contact', description: 'contact form and info' },
     { name: 'resume', description: 'professional resume' },
+    { name: 'contact', description: 'contact form and info' },
   ]);
 
   const [currentCategory, setCurrentCategory] = useState(categories[0]);
@@ -32,8 +33,8 @@ function App() {
             <Navigation currentCategory={currentCategory}></Navigation>
           </>
         ) : (
-          <ContactForm></ContactForm>
-        )}
+        //   <ContactForm></ContactForm>
+         )}
       </main>
     </div>
   );
