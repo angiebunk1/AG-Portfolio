@@ -7,10 +7,10 @@ import Section from './components/Section'
 function App() {
 
   const [sections] = useState([
-    { name: 'About me' },
+    { name: 'About' },
     { name: 'Portfolio' },
     { name: 'Resume' },
-    { name: 'Contact me' }
+    { name: 'Contact' }
   ]);
 
   const [currentSection, setCurrentSection] = useState(sections[0]);
