@@ -1,14 +1,23 @@
 import React from "react";
+import Navigation from "../Navigation";
 
 function Header (props) {
+    const { sections = [], 
+        setCurrentSection,
+        currentSection } = props;
+
     return (
-        <div>
+        <div className="header">
             <h2>
                 <a href="/">
                     ANGIE GUSTAFSON
                 </a>
             </h2>
-            {props.children}
+            <Navigation 
+          sections={sections}
+          setCurrentSection={setCurrentSection} 
+          currentSection={currentSection}
+          ></Navigation>
         </div>
     );
 };

@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import Navigation from './components/Navigation'
-import Section from './components/Section'
+import Contact from './components/Contact';
+import About from './components/About';
+import Portfolio from './components/Portfolio';
+import Resume from './components/Resume';
+import './App.css'
 
 function App() {
 
@@ -14,21 +17,34 @@ function App() {
   ]);
 
   const [currentSection, setCurrentSection] = useState(sections[0]);
+
+  function render () {
+    if (currentSection.name === "About") {
+      return <About></About>
+    }
+    if (currentSection.name === "Contact") {
+      return <Contact></Contact>
+    }
+    if (currentSection.name === 'Portfolio') {
+      return <Portfolio></Portfolio>
+    }
+    if (currentSection.name === 'Resume') {
+      return <Resume></Resume>
+    }
+  }
  
 
   return (
     <div>
       <header>
-        <Header>
-          <Navigation 
+        <Header 
           sections={sections}
           setCurrentSection={setCurrentSection} 
-          currentSection={currentSection}
-          ></Navigation>
+          currentSection={currentSection}>          
         </Header>
       </header>
       <main>
-        <Section currentSection={currentSection}></Section>
+        {render()}
       </main>
       <Footer></Footer>
     </div>

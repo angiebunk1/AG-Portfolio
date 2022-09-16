@@ -7,7 +7,7 @@ function Navigation (props) {
 
     return (
         <nav>
-            <ul>
+            <ul className="nav">
                 {sections.map((Section) => (
                     <li sectionName={`${currentSection.name === Section.name && 'navActive'}`} key={Section.name}>
                         <span onClick={() => setCurrentSection(Section)}>{Section.name}</span>
