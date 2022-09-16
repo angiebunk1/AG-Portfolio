@@ -9,7 +9,7 @@ function Navigation (props) {
         <nav>
             <ul className="nav">
                 {sections.map((Section) => (
-                    <li sectionName={`${currentSection.name === Section.name && 'navActive'}`} key={Section.name}>
+                    <li sectionName={`${currentSection.name === Section.name && 'highlight'}`} key={Section.name}>
                         <span onClick={() => setCurrentSection(Section)}>{Section.name}</span>
                     </li>
                 ))}

@@ -39,6 +39,9 @@ function Contact() {
   return (
     <section>
       <h1 data-testid="h1tag">Contact me</h1>
+      <p>
+        I'd love to hear from you! You can email me at <span><a href="">angela.gustafson@gmail.com</a></span> or use the form below. 
+      </p>
       <form id="contact-form" onSubmit={handleSubmit}>
         <div>
           <label htmlFor="name">Name:</label>
