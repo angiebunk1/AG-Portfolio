@@ -60,6 +60,10 @@ a {
     padding: 10px 20px;
 }
 
+.nav li:hover {
+  cursor: pointer;
+}
+
 footer {
   background: var(--secondary-color);
   width: 100%;
@@ -68,7 +72,7 @@ footer {
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
-  position: absolute;
+  position: fixed;
   bottom: 0;
 }
 
@@ -76,6 +80,27 @@ footer h3 {
   color: antiquewhite;
   margin: 0;  
 }
+
+.about {
+  padding: 20px 40px;
+}
+
+.About-Me {
+  display: flex;
+  align-items: center;
+  padding: 20px 0px;
+  width: 100%;
+  flex-direction: row;
+}
+
+.bio {
+  display: flex;
+  align-items: center;
+  padding: 20px 40px;
+  width: 65%;
+
+}
+
 
 .profile-links ul {
   color: antiquewhite;
@@ -127,4 +152,43 @@ footer h3 {
   background-size: cover;
   width: 300px;
   height: 100px;
+}
+
+/* media queries */
+@media only screen and (max-width: 820px) {
+  section {
+      padding: 20px 20px;
+  }
+
+  .About-Me {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      padding-bottom: 10px;
+      width: 100%;
+      flex-direction: column;
+  }
+
+  .bio {
+      width: 80%;
+  }
+  
+}
+
+@media only screen and (max-width: 500px) {
+  section {
+      padding: 20px 20px;
+  }
+ 
+ 
+  .bio-img {
+      display: flex;
+      justify-content: center;
+  }
+  
+  .bio-img img {
+      width: 80%;
+  }
+  
 }
