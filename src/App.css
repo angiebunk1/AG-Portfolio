@@ -115,43 +115,75 @@ footer h3 {
   padding: 0px 30px;
 }
 
+.portfolio {
+  display: flex;
+  padding: 20px 20px;
+  width: 100%;
+  flex-direction: column;
+
+}
+
+.projects {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  padding: 20px 0px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+}
+
+.project-titles {
+  background-color:var(--primary-color);
+  position: absolute;
+  padding: 5px;
+  border: solid 2px var(--secondary-color);
+
+}
+
 
 .project1 {
   background: url(./assets/images/parkour.jpg);
   background-size: cover;
-  width: 300px;
-  height: 100px;
+  width: 500px;
+  height: 150px;
+  margin: 0px 0px 30px;
 }
 
 .project2 {
   background: url(./assets/images/techblog.jpg);
   background-size: cover;
-  width: 300px;
-  height: 100px;
+  width: 500px;
+  height: 150px;
+  margin: 0px 0px 30px;
 }
 .project3 {
   background: url(./assets/images/marvelproject.jpg);
   background-size: cover;
-  width: 300px;
-  height: 100px;
+  width: 500px;
+  height: 150px;
+  margin: 0px 0px 30px;
 }
 .project4 {
   background: url(./assets/images/notetaker.jpg);
   background-size: cover;
-  width: 300px;
-  height: 100px;
+  width: 500px;
+  height: 150px;
+  margin: 0px 0px 30px;
 }
 .project5 {
   background: url(./assets/images/workday.jpg);
   background-size: cover;
-  width: 300px;
-  height: 100px;
+  width: 500px;
+  height: 150px;
+  margin: 0px 0px 30px;
 }
 .project6 {
   background: url(./assets/images/social-network-api.jpg);
   background-size: cover;
-  width: 300px;
-  height: 100px;
+  width: 500px;
+  height: 150px;
+  margin: 0px 0px 30px;
 }
 
 /* media queries */
@@ -170,6 +202,7 @@ footer h3 {
       flex-direction: column;
   }
 
+ 
   .bio {
       width: 80%;
   }
@@ -180,15 +213,33 @@ footer h3 {
   section {
       padding: 20px 20px;
   }
- 
- 
-  .bio-img {
-      display: flex;
-      justify-content: center;
+
+  .project1{
+    width: 300px
   }
+
+  .project2{
+    width: 300px
+  }
+
+  .project3{
+    width: 300px
+  }
+
+  .project4{
+    width: 300px
+  }
+
+  .project5{
+    width: 300px
+  }
+
+  .project6{
+    width: 300px
+  }
+
+ 
+ 
   
-  .bio-img img {
-      width: 80%;
-  }
   
 }

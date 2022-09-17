@@ -13,9 +13,9 @@ function Portfolio () {
       ]);
 
       return (
-        <div>
+        <div className="portfolio">
             <h2>Projects</h2>
-            <div>
+            <div className="projects">
                 {projects.map((project) => (
                     <Project project={project} key={project.title}></Project>
                 ))}
