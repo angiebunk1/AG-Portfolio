@@ -65,6 +65,10 @@ a {
   cursor: pointer;
 }
 
+.nav li.active {
+  color:#5a215a;
+}
+
 footer {
   background: var(--secondary-color);
   width: 100%;
