@@ -16,10 +16,12 @@ return (
 
         </div>
         </a>
-        <a href={link1} target='_blank'><h4>Deployed Site</h4></a>
-        <a href={link2} target='_blank'>
-            <h4>Github Repo</h4>
-        </a>
+        <p>
+        <a href={link1} target='_blank'>Deployed Site</a>
+        </p>
+        <p>
+        <a href={link2} target='_blank'>Github Repo</a>
+        </p>
     </>
 
 )
