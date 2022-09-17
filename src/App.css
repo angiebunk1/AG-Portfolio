@@ -32,6 +32,7 @@ a {
     position: -webkit-sticky;
     top: 0;
     z-index: 9999;
+    width: 100%;
 }
 
 .header h2 {
@@ -202,6 +203,30 @@ footer h3 {
   padding: 10px 0px;
 }
 
+.contact {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 20px;
+  width: 100%;
+}
+
+.greeting {
+  padding: 10px 0px;
+}
+
+.form-field {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+
+}
+
+.submit {
+  margin: 5px;
+  padding: 5px;
+}
+
 /* media queries */
 @media only screen and (max-width: 820px) {
   section {
@@ -222,8 +247,14 @@ footer h3 {
   .bio {
       width: 80%;
   }
+
+  .form-field {
+    width: 50%;
+  }
   
 }
+
+
 
 @media only screen and (max-width: 500px) {
   section {
@@ -254,7 +285,9 @@ footer h3 {
     width: 300px
   }
 
- 
+ .form-field {
+  width: 60%;
+ }
  
   
   

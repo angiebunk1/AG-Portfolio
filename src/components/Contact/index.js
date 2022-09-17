@@ -37,31 +37,33 @@ function Contact() {
   };
 
   return (
-    <section>
+    <section className='contact'>
       <h1>Contact me</h1>
-      <p>
+      <p className='greeting'>
         I'd love to hear from you! You can email me at <span><a href="mailto:angela.gustafson@gmail.com">angela.gustafson@gmail.com</a></span> or use the form below. 
       </p>
+      <div className='contact-form'>
       <form id="contact-form" onSubmit={handleSubmit}>
-        <div>
+        <div className='form-field'>
           <label htmlFor="name">Name:</label>
           <input type="text" name="name" defaultValue={name} onBlur={handleChange} />
         </div>
-        <div>
+        <div className='form-field'>
           <label htmlFor="email">Email address:</label>
           <input type="email" name="email" defaultValue={email} onBlur={handleChange} />
         </div>
-        <div>
+        <div className='form-field'>
           <label htmlFor="message">Message:</label>
           <textarea name="message" rows="5" defaultValue={message} onBlur={handleChange} />
         </div>
         {errorMessage && (
-          <div>
+          <div className='form-field'>
             <p className="error-text">{errorMessage}</p>
           </div>
         )}
-        <button data-testid="button" type="submit">Submit</button>
+        <button data-testid="button" type="submit" className='submit'>Submit</button>
       </form>
+      </div>
     </section>
   );
 }
