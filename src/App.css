@@ -43,11 +43,9 @@ a {
     align-items: center;
 }
 
-.nav {
-    margin: 10px 10px;
-}
 
 .nav {
+    margin: 10px 10px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -61,6 +59,37 @@ a {
     font-size: 20px;
     padding: 10px 20px;
 }
+
+footer {
+  background: var(--secondary-color);
+  width: 100%;
+  padding: 20px 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+}
+
+footer h3 {
+  color: antiquewhite;
+  margin: 0;  
+}
+
+.profile-links ul {
+  color: antiquewhite;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+}
+
+.profile-links ul li {
+  padding: 0px 30px;
+}
+
 
 .project1 {
   background: url(./assets/images/parkour.jpg);
