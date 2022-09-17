@@ -4,12 +4,12 @@ import React from 'react';
 
 function Resume() {
   return (
-    <div>
+    <div className='resume'>
       <h2>Resume</h2>
-      <a href='https://drive.google.com/file/d/1OUebNBobsW0fbhDFNmMvudWFtzyjJpM5/view?usp=sharing' target="_blank"> Download Resume Here </a>
+      <a href='https://drive.google.com/file/d/1OUebNBobsW0fbhDFNmMvudWFtzyjJpM5/view?usp=sharing' target="_blank" className='reslink'> Download Resume Here </a>
       <div>
         <h3>Technical Skills Include:</h3>
-        <p>
+        <p className='skills'>
         HTML | CSS | JAVASCRIPT | APIs | NODE.JS | OOP | EXPRESS.JS | MySQL | ORM | MVC FRAMEWORKS | JEST | AGILE | HEROKU | NoSQL | MongoDB | MONGOOSE | PWAs | REACT | MERN
         </p>
       </div>
