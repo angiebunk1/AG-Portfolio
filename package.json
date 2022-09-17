@@ -1,7 +1,7 @@
 {
   "name": "ag-portfolio",
   "version": "0.1.0",
-  "homepage": "http://angiebunk1.github.io/ag-portfolio",
+  "homepage": "http://angiebunk1.github.io/Angie-Gustafson-Portfolio",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
