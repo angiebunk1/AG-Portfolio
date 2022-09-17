@@ -16,9 +16,9 @@ return (
 
         </div>
         </a>
-        <a href={link1}>first link</a>
-        <a href={link2}>
-            <h4>Another link</h4>
+        <a href={link1} target='_blank'><h4>Deployed Site</h4></a>
+        <a href={link2} target='_blank'>
+            <h4>Github Repo</h4>
         </a>
     </>
 
